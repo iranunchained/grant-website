@@ -14,7 +14,7 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
     historicalRounds: [
       {
         tags: ["Devconnect", "Round 1"],
-        note: "Raised 5.1 ETH to support Iranian devs attend Devconnect",
+        note: "Support Iranian devs attend Devconnect",
         link: "https://forum.iranunchained.org/t/round-1-devconnect/27", // => pretty link
         raised: {
           value: "5.1",
@@ -53,7 +53,7 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
     historicalRounds: [
       {
         tags: ["Round 1"],
-        note: "Purchased 30 NFTs from Iranian artists (400 Applicants)",
+        note: "May 2023 - Purchased 30 NFTs from Iranian artists (400 Applicants)",
         link: "https://twitter.com/UnchainIran/status/1664038669026484226",
         raised: {
           value: "6.6",
@@ -79,7 +79,7 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
     historicalRounds: [
       {
         tags: ["Round 1", "Internet4I"],
-        note: "Funding Internet4I for fighting the internet censorship in Iran",
+        note: "May 2023 - Funding Internet4I for fighting the internet censorship in Iran",
         link: "https://twitter.com/UnchainIran/status/1655970794575634432",
         raised: {
           value: "5.1",
@@ -88,7 +88,7 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
       },
       {
         tags: ["Round 2", "Game of Trust"],
-        note: "Funding Game of Trust to develop secure anonymous communication tools for Iranians",
+        note: "June 2023 - Funding Game of Trust to develop secure anonymous communication tools for Iranians",
         link: "https://forum.iranunchained.com/t/internet-freedom-for-iran/16/9",
         raised: {
           value: "5.0",
@@ -97,7 +97,7 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
       },
       {
         tags: ["Round 3", "Internet4I"],
-        note: "Funding Internet4I for fighting the internet censorship in Iran",
+        note: "August 2023 - Funding Internet4I for fighting the internet censorship in Iran",
         link: "https://forum.iranunchained.com/t/free-internet-for-iran-achievements-implementation-objectives-future/63",
         raised: {
           value: "5.1",
@@ -121,7 +121,7 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
     historicalRounds: [
       {
         tags: ["Round 1"],
-        note: "",
+        note: "May 2023",
         link: "https://forum.iranunchained.com/t/zan-zendegi-azadi-newsletter/12/4",
         raised: {
           value: "5.1",
