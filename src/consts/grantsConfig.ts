@@ -48,7 +48,7 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
     // Supporting Iranian NFT Artists
     isOfficial: true,
     currentRound: {
-      tags: ["Round 2"],
+      tags: ["Round 3"],
     },
     historicalRounds: [
       {
@@ -60,21 +60,40 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
           formatted: "6.6 ETH",
         },
       },
+      {
+        tags: ["Round 2"],
+        note: "Oct 2023 - Purchased over 100 NFTs from Iranian artists on ETH & Tezos",
+        link: "https://twitter.com/UnchainIran/status/1714291736930091383",
+        raised: {
+          value: "6",
+          formatted: "6 ETH",
+        },
+      },
     ],
   },
   bafkreiaayldpo7f3whoxspezqdzh6iotvkuqvzcmucnycfkkphfocfg5qy: {
     // Humanitarian Aid For Iran
     isOfficial: true,
-    historicalRounds: [],
     currentRound: {
-      tags: [],
+      tags: ["Round 2"],
     },
+    historicalRounds: [
+      {
+        tags: ["Round 1"],
+        note: "Oct 2023 - Funding Internet4I for fighting the internet censorship in Iran",
+        link: "https://twitter.com/UnchainIran/status/1714291726989561916",
+        raised: {
+          value: "13.1",
+          formatted: "13.1 ETH",
+        },
+      },
+    ],
   },
   bafkreifkzpfybx4jwupsuw4ek2h7w34om6bnsqfpgoxm7hlsmj6b4gg27y: {
     // Internet Freedom For Iran
     isOfficial: true,
     currentRound: {
-      tags: ["Round 4"],
+      tags: ["Round 5"],
     },
     historicalRounds: [
       {
@@ -102,6 +121,15 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
         raised: {
           value: "5.1",
           formatted: "5.1 ETH",
+        },
+      },
+      {
+        tags: ["Round 4", "Internet4I"],
+        note: "Oct 2023 - Funding MoleTheWall for censorship circumventing VPNs",
+        link: "https://twitter.com/UnchainIran/status/1714291733411049624",
+        raised: {
+          value: "6.5",
+          formatted: "6.5 ETH",
         },
       },
     ],
@@ -140,7 +168,7 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
   },
   bafkreiay66n6yxo2rdacyyct74grjqny7d6ndnpvgkfpg6ncbxsuavulce: {
     // Free Education
-    isOfficial: true,
+    isOfficial: false,
     currentRound: {
       tags: ["Round 1", "Solidity Cohort"],
       note: "Funding support for Women in Blockchain Farsi Free Solidity course over Summer 2023",
