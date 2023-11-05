@@ -13,12 +13,26 @@ const Home: React.FC = () => (
         className="pb-10"
         heading={
           <span>
-            Support 🕊️
+            Support (v2) 🕊️
             <br /> Help, and Fund <br /> Grants for Iranians {` `}
             {/* <span className="relative pr-3">
                 <Image alt="Vector1" className="absolute w-full bottom-3 -left-1" src={Vector1} />
                 <span className="relative">Grants</span>
               </span> */}
+          </span>
+        }
+        subHeading={
+          <span className="block max-w-lg text-base xl:text-lg text-neutral-6000 dark:text-neutral-400">
+            Explore our newly launched IranUnchained v2 grant platform to support Iranians on{" "}
+            <a
+              className="text-primary-500"
+              href={process.env.NEXT_PUBLIC_V2_URL}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              IranUnchained v2
+            </a>
+            .
           </span>
         }
       />

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { NcImage } from "components";
-import React from "react";
+import React, { useMemo } from "react";
 import { TGrant } from "types";
 import clsx from "clsx";
+import { GRANT_CONFIGS } from "consts";
 
 export interface GrantCardProps {
   className?: string;
@@ -11,6 +12,15 @@ export interface GrantCardProps {
 
 const GrantCard: React.FC<GrantCardProps> = ({ className = "", grant }) => {
   const { id, title, description, image, currentRound } = grant;
+  const grantConfig = GRANT_CONFIGS[id] ?? {};
+  const historicalRaised = useMemo(
+    () =>
+      (grantConfig.historicalRounds ?? []).reduce(
+        (sum, round) => sum + parseFloat(round.raised.formatted),
+        0,
+      ),
+    [grantConfig.historicalRounds],
+  );
 
   const tags = currentRound?.tags ?? [];
 
@@ -59,10 +69,22 @@ const GrantCard: React.FC<GrantCardProps> = ({ className = "", grant }) => {
             <div className="pt-3">
               <div className="flex items-baseline border-2 border-green-500 rounded-lg relative py-1.5 md:py-2 px-2.5 md:px-3.5 text-sm sm:text-base font-semibold">
                 <span className="block absolute font-normal bottom-full translate-y-2 p-1 -mx-1 text-xs text-neutral-500 dark:text-neutral-400 bg-white dark:bg-neutral-900 dark:group-hover:bg-neutral-800 group-hover:bg-neutral-50">
-                  Raised
+                  Balance
                 </span>
                 <span className="text-green-500 !leading-none">
                   {currentRound?.raised?.formatted}
+                </span>
+              </div>
+            </div>
+          )}
+          {!!historicalRaised && (
+            <div className="pt-3">
+              <div className="flex items-baseline border-2 border-green-500 rounded-lg relative py-1.5 md:py-2 px-2.5 md:px-3.5 text-sm sm:text-base font-semibold">
+                <span className="block absolute font-normal bottom-full translate-y-2 p-1 -mx-1 text-xs text-neutral-500 dark:text-neutral-400 bg-white dark:bg-neutral-900 dark:group-hover:bg-neutral-800 group-hover:bg-neutral-50">
+                  Total Raised
+                </span>
+                <span className="text-green-500 !leading-none">
+                  {historicalRaised.toFixed(2)} ETH
                 </span>
               </div>
             </div>

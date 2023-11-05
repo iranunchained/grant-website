@@ -53,7 +53,7 @@ const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
   selectedFilter,
 }) => (
   <div className={clsx(`flex flex-col relative`, className)}>
-    <Heading name="Featured Grants" />
+    <Heading name="Featured NGO Grants" />
     <div className="flex flex-col-reverse justify-between space-y-6 space-y-reverse lg:space-y-0 lg:flex-row lg:items-center lg:space-x-2">
       <Nav
         className="sm:space-x-2"

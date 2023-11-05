@@ -15,13 +15,13 @@ export const NAVIGATION_DATA: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/#featured-grants",
-    name: "Grants",
+    href: process.env.NEXT_PUBLIC_V2_URL!,
+    name: "IranUnchained v2",
   },
   {
     id: ncNanoId(),
     href: "/grants/create",
-    name: "Create",
+    name: "Create New NGO Grant",
   },
 ];
 

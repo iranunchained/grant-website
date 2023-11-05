@@ -34,8 +34,16 @@ const NavMobile: React.FC<NavMobileProps> = ({ data = NAVIGATION_DATA, onClickCl
         <Logo />
         <div className="flex flex-col mt-5 text-sm text-neutral-700 dark:text-neutral-300">
           <span>
-            Send ETH to the grant areas you want to support and IranUnchained will verify the
-            recipients and distribute funds.
+            Explore our newly launched IranUnchained v2 grant platform to support Iranians on{" "}
+            <a
+              className="text-primary-500"
+              href={process.env.NEXT_PUBLIC_V2_URL}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              IranUnchained v2
+            </a>
+            .
           </span>
 
           <div className="flex items-center justify-between mt-4">

@@ -123,12 +123,12 @@ const Create: React.FC<PageUploadItemProps> = ({ className = "" }) => {
       <div className="container">
         <div className="max-w-4xl mx-auto my-12 space-y-8 sm:lg:my-16 lg:my-24 sm:space-y-10">
           <div className="max-w-2xl">
-            <h2 className="text-3xl font-semibold sm:text-4xl">Create New Grant</h2>
+            <h2 className="text-3xl font-semibold sm:text-4xl">Create New NGO Grant</h2>
             <span className="block mt-3 text-neutral-500 dark:text-neutral-400">
               Please read{" "}
               <strong>
                 <a
-                  href="https://forum.iranunchained.com/t/iranunchained-grant-proposal-process/31"
+                  href="https://www.iranunchained.com/grants/create"
                   rel="referrer noreferrer"
                   target="_blank"
                 >

@@ -6,8 +6,7 @@ import Navigation from "components/Navigation/Navigation";
 import SwitchDarkMode from "components/SwitchDarkMode/SwitchDarkMode";
 
 const MainNav: React.FC = () => {
-  const bannerMessage = process.env.NEXT_PUBLIC_TOP_BANNER_MESSAGE;
-  const showTopBanner = !!bannerMessage;
+  const v2URL = process.env.NEXT_PUBLIC_V2_URL;
 
   return (
     <>
@@ -32,11 +31,13 @@ const MainNav: React.FC = () => {
           </div>
         </div>
       </div>
-      {showTopBanner && (
-        <Banner isClosable wrapperClasses="pt-3 pb-4 container">
-          {bannerMessage}
-        </Banner>
-      )}
+      <Banner isClosable wrapperClasses="pt-3 pb-4 container">
+        Please check out IranUnchained v2 -{" "}
+        <a className="text-primary-500" href={v2URL} rel="noopener noreferrer" target="_blank">
+          Click here
+        </a>
+        .
+      </Banner>
     </>
   );
 };

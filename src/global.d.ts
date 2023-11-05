@@ -8,7 +8,7 @@ declare global {
       NEXT_PUBLIC_WEB3_STORAGE_TOKEN: string | undefined;
       NEXT_PUBLIC_DAO_ADDRESS: string | undefined;
       NEXT_PUBLIC_VAULT_CONTRACT_FACTORY_ADDRESS: string | undefined;
-      NEXT_PUBLIC_TOP_BANNER_MESSAGE: string | undefined;
+      NEXT_PUBLIC_V2_URL: string | undefined;
     }
   }
 }
