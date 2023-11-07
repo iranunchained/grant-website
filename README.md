@@ -8,9 +8,9 @@
 ```typescript
 {
   bafkreiadbnc2srypktdfzq2nsut36agij4trq6rdtgwqfd4r76eda47eku: { // Copy from the URL, this is the IPFS hash of the grant
-    isCompleted: true, # If the grant is completed/funded, the grant will show under Completed category
-    isOfficial: false, # True for official IranUnchained grants, (default) false for the rest
-    raisedBalance: { # overwrites the balance from thegraph, you can set this for completed grants
+    isCompleted: true, // If the grant is completed/funded, the grant will show under Completed category
+    isOfficial: false, // True for official IranUnchained grants, (default) false for the rest
+    raisedBalance: { // overwrites the balance from thegraph, you can set this for completed grants
       value: "1",
       formatted: "1 ETH",
     },
