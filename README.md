@@ -5,7 +5,7 @@
 
 - Add grants to the list in the following format:
 
-```json
+```typescript
 {
   bafkreiadbnc2srypktdfzq2nsut36agij4trq6rdtgwqfd4r76eda47eku: { // Copy from the URL, this is the IPFS hash of the grant
     isCompleted: true, # If the grant is completed/funded, the grant will show under Completed category
@@ -14,6 +14,8 @@
       value: "1",
       formatted: "1 ETH",
     },
+  }
+}
 ```
 
 # Network Config
