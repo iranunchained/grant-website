@@ -176,4 +176,12 @@ export const GRANT_CONFIGS: Record<string, IGrantConfig> = {
     },
     historicalRounds: [],
   },
+  bafkreid3lmhwyzx2cvgg5xlyfg733qnee3y4lrnnovh4um5eiyprtgpeym: {
+    // Free internet for Iran - v2 Mirror
+    isOfficial: true,
+    historicalRounds: [],
+    currentRound: {
+      tags: [],
+    },
+  },
 };
